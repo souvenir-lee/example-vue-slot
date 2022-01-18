@@ -1,18 +1,31 @@
-<template>
+<template lang="pug">
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    FormHelper
+      div(slot="form-header")
+        h3 This is form title
+        p Information is here
+      div(slot="form-fields")
+        input(type="text" placeholder="name" required)
+        input(type="password" placeholder="password" required)
+      div(slot="form-controller")
+        button(@click="handleSubmit") Submit
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormHelper from "./components/FormHelper.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    FormHelper,
+  },
+  methods: {
+    handleSubmit: function () {
+      alert("Complete!")
+    },
+  },
 }
 </script>
 
