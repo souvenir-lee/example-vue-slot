@@ -10,16 +10,9 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
 ### Lints and fixes files
 ```
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# example-vue-slot
+- reference : YouTube Vue JS 2 Tutorial #27 - Slots(feat. the Net Ninja)[https://www.youtube.com/watch?v=F44OoFk8spg]
